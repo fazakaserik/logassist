@@ -7,7 +7,7 @@ def parse_requirements(filename):
 
 setuptools.setup(
     name='logassistant',
-    version='0.1.1',
+    version='0.1.2',
     package_dir={'': 'src'},
     packages=setuptools.find_packages(where='src'),
     install_requires=parse_requirements('requirements.txt'),  # Read from requirements.txt

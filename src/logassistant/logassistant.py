@@ -100,8 +100,9 @@ class LogAssistant:
             # Execute the function with the provided arguments
             result = func(*args, **kwargs)
 
-            # Prepare the log message
-            request_content = f"""Analyze this function call as if it was executed and create a log message that a programmer would write as a sentence, don't write any prefixes: 
+            # Prepare the prompt
+            prompt = f"""Analyze this function call as if it was executed and create a log message that 
+                a programmer would write as a sentence, don't write any prefixes. Try to summarize what the function does in short. 
                 The function is: {source_code} with parameters: {arguments_str}. The result was {result}"""
 
             print(
@@ -111,7 +112,7 @@ class LogAssistant:
             )
 
             # Send the log message to ChatGPT
-            response = self.send_request(request_content)
+            response = self.send_request(prompt)
 
             print(
                 "\r" + " " * (shutil.get_terminal_size().columns - 1), end="\r"
