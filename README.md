@@ -42,6 +42,29 @@ print(result)  # Output: 25
 
 The Log Assistant will automatically generate log messages for each function call, analyze them using the GPT-3.5-Turbo model, and print the results to the console.
 
+Check out this example for this simple square function:
+```python
+from logassistant import LogAssistant
+
+# Create an instance of LogAssistant
+logassistant = LogAssistant()
+
+# Applying the decorator
+@logassistant.log
+def example_function(x):
+    return x ** 2
+
+if __name__ == "__main__":
+    example_function(5)
+    example_function(10)
+```
+
+Console output:
+```
+1.      The function example_function was called with the parameter x=5. It returned the result 25, which is the square of the input value.
+2.      The function call example_function(x=10) was executed and returned a result of 100. This function takes in a parameter x and returns the square of x.
+```
+
 # Configuration
 Before using the Log Assistant, make sure to set up your OpenAI API key as an environmental variable named `OPENAI_API_KEY`.
 
