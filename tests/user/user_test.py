@@ -1,4 +1,3 @@
-
 from logassist import LogAssistant
 
 # Create an instance of LogAssistant
