@@ -1,4 +1,4 @@
-from logassist import LogAssistant
+from logassistant import LogAssistant
 
 # Create an instance of LogAssistant
 logassistant = LogAssistant()

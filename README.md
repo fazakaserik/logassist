@@ -14,7 +14,7 @@ The Log Assistant is a Python package that provides a simple yet powerful tool t
 You can install the Log Assistant package using `pip`:
 
 ```bash
-pip install logassist
+pip install logassistant
 ```
 
 # Usage
@@ -22,15 +22,15 @@ To use the Log Assistant in your Python code, follow these steps:
 
 1. Import the LogAssistant class:
 ```python
-from logassist import LogAssistant
+from logassistant import LogAssistant
 ```
 2. Create an instance of the LogAssistant:
 ```python
-log_assistant = LogAssistant()
+logassistant = LogAssistant()
 ```
 3. Apply the `@log_assistant.log` decorator to any function you want to log:
 ```python
-@log_assistant.log
+@logassistant.log
 def example_function(x):
     return x ** 2
 ```

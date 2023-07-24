@@ -6,7 +6,7 @@ def parse_requirements(filename):
         return [line.strip() for line in f if line.strip()]
 
 setuptools.setup(
-    name='logassist',
+    name='logassistant',
     version='0.1.0',
     package_dir={'': 'src'},
     packages=setuptools.find_packages(where='src'),

@@ -18,7 +18,7 @@ class LogAssistant:
 
         # Initial prints
         self.print_horizontal_line()
-        self.print_centered("LOG ASSIST")
+        self.print_centered("LOG ASSISTANT")
         self.print_horizontal_line()
 
     def create_horizontal_line(self):
