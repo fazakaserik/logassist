@@ -2,8 +2,6 @@
 
 The Log Assistant is a Python package that provides a simple yet powerful tool to log function calls and send log messages for analysis using the OpenAI GPT-3.5-Turbo model. It allows you to easily track the number of function calls and generate insightful log messages with just a decorator.
 
-![Release Status](https://img.shields.io/github/workflow/status/fazakaserik/logassistant/Release?label=Workflow&logo=github&style=for-the-badge)
-
 ## Features
 
 - Decorator to log function calls with customizable log messages.
